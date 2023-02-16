@@ -1,62 +1,87 @@
 @charset "UTF-8";
 
-                /* BODY */
+@font-face {
+    font-family: game;
+    src: url(../fontes/GamePlan\ -\ Dker.ttf);
+    font-weight: auto;
+}
+
+                /* BODY 
+                #152904 MEMBROS
+                #044122 FALE CONOSCO
+                #DA0012 INSCRIÇÕES
+                #117B3C OBJETIVOS
+                #7B0B0A MODALIDADES
+                */
 
 body{
     background-color: black;
     font-family: 'Times New Roman', Times, serif;
     color: white;
     margin: 0px;
+
+    background-repeat: no-repeat;
+    background-position:right center;
+    background-size: 20%;
+    background-attachment: fixed;
+
 }
 
-                   /* HEADER */
+                   /* HEADER C:\Users\vitor\Desktop\CODE\Linguagens\html\Projetos\Projeto Predators\imagens*/
 
 header{
-    background-image: linear-gradient(to bottom, rgb(13, 13, 110),rgb(26, 71, 26) );
+    background-image:url('../imagens/predators.png');    
+    background-size: 32%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: transparent;
     min-height: 125 px;
     text-align: center;
-    color: rgb(197, 4, 4);
-    padding-top: 40px;
-    padding-bottom: 1px;
+    padding-top: 20px;
+    height: 200px;
 }
 
-header > h1{
+div.fundo{
+    background-image: linear-gradient(to right, #7D0C0B, #044122 );
+}
+
+/* header > h1{
     color: white;
-    font-family: var(--font-destaque);
+    font-family: fantasy;
     font-size: 4em;
     font-weight: normal;
     text-align: center;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.288);
-}
+} */
 
 
                     /* NAV */
 
 nav{
-    background-color: white;
-    padding-top: 20px;
-    height: 40px;
-    box-shadow: 1px 6px 8px rgba(0, 0, 0, 0.452);
+    /* background-image: linear-gradient(to bottom,#044122, #7D0C0B); */
+    background-color: black;
+    padding: 10px;
+    padding-left: 0px;
+    margin-bottom: 15px;
+    height: auto;
+    box-shadow: 1px 6px 8px rgba(78, 77, 77, 0.452);
     justify-content: center;
 }
-
-  
-nav >  a {
+nav > a {
     text-decoration: none;
-    padding: 20px;
+    padding: 10px;
     font-weight: bold;
-    color: #333;
-    transition-duration: 0.7s;
+    color: white;
+    transition-duration: 0.4s;
   }  
-
-  nav > a:hover{
-    background-color: green;
-    color: red;
-
+nav > a:hover{
+    background-color: white;
+    color: #152904;
 }
 
 
-                    /* MAIN */
+                    /* main */
+
 
 main{
     border: 10px;
@@ -65,79 +90,185 @@ main{
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
-    background-color: white;
+    background-color: black;
     box-shadow: 0px 6px 10px black;
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 0px 10px 10px;
+}
+section{
+    background-color: black;
+    position: relative;
+}
+#container{
+    background-color: black;
+    border-radius: 10px 10px 10px 10px;   
 }
 
-main  h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: red;
-    font-weight: bold;
-    font-size: 2em;
+#obj{
+    background-color:rgb(100, 26, 26);
+    border: 15px;
+    border-radius: 10px 10px 10px 10px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;    
+}
+
+#obj h1{
     text-align: center;
-    text-shadow: 2px black;
-}
-
-main h2{
     display: block;
-
-    color: blue;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-align: center;
-    text-shadow: 2px black;
-
-}
-main p{
-    margin: 15px 0px;
-    text-align: justify;
-    text-indent: 30px;
-    font-size: 1em;
-    line-height: 1.5em;
+    font-size: 3em;
     color: black;
+    font-family: game;
+    margin:0px;
+    border: 10px 10px 10px 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.315);
+    
 }
-main div{
-    height: 200px;
+
+main p{
+    color: black;
+    font-weight: normal;
+    padding: 5px 5px 5px 5px;
+}
+
+section > #modalidades{
+    background-color:rgb(100, 26, 26);
+    border: 15px;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 0px;    
+}
+
+#modalidades h1{
+    text-align: center;
     display: block;
+    color: black;
+    font-size: 3em;
+    font-family: game;
+    margin:0px;
+    border: 10px 10px 10px 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.315);
 }
 
 div.lol{
-    background-image: url('https://gameskinshop.com/wp-content/uploads/2017/07/Dutchboosters_lol_logo.png');
-    background-size: 50%;
+    padding:0px 0px 0px 0px;
+    height: 140px;
+    background-image: url('../imagens/lol.png');
+    background-size: 44%;
     background-position: center center;
-    background-repeat: no-repeat;
+    background-repeat:  no-repeat;
+    justify-content: center;
 }
 
 div.cs{
+    height: 140px;
     background-image: url('https://download.logo.wine/logo/Counter-Strike:_Global_Offensive/Counter-Strike:_Global_Offensive-Logo.wine.png');
     background-size: 60%;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+
 }
 
 div.valorant{
+    height: 140px;
     background-image: url('https://logo-base.com/logo/valorant_logo_png.png');
     background-size: 30% ;
     background-position: bottom center;
     background-repeat: no-repeat;
 }
 
-
-
-                /* FOOTER */
-
-footer{
-    background-color: var(--cor4);
-    color: white;
-    font-size: 0.9em;
+section > #membros{
+    background-color:rgb(100, 26, 26);
+    border: 15px;
+    border-radius: 10px 10px 10px 10px;
+    display: table;
+    margin: auto;
+    
+}
+#membros h1{
     text-align: center;
-    padding: 5px;
+    display: flex;
+    color: black;
+    font-size: 2em;
+    font-family: game;
+    justify-content: center;
+    margin:0px;
+    padding-top: 5px;
+    font-weight: normal;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.315);
 }
 
-footer a:hover{
-    text-decoration: underline;
-    color: var(--cor1);
+#membros h2{
+    text-align: center;
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
 }
+
+div.membros{
+    width: 250px;
+    display: inline-grid;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-items: center;
+
+}
+
+.diretor{
+    height: 150px;
+    width: 150px;
+    background-image: url('https://pps.whatsapp.net/v/t61.24694-24/186308777_985607595662157_2364136267209116181_n.jpg?ccb=11-4&oh=01_AdRIJOgjQCb4kjZS9PfZ0pORrtxl_OD4Zr4s9Hb4GXhGHA&oe=63F92874');
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 0px;
+    justify-items: normal;
+    margin: 6px;
+    border: 3px groove #044122;
+    position: relative;
+}
+
+.secretario{
+    height: 150px;
+    width: 150px;
+    background-image: url("https://pps.whatsapp.net/v/t61.24694-24/308914462_353542730296210_5279922894444490840_n.jpg?ccb=11-4&oh=01_AdQ92862AKE8XnnjUWI_jq8GxEAp2g3j2oV9t5ENX5Bamg&oe=63F92780");
+    background-size: 100% ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 0px;
+    justify-self: center;
+    margin: 6px;
+    border: 3px groove #044122;
+}
+
+ .legenda1{
+    visibility: hidden;
+    position: relative;
+    left: 0px;
+    bottom: 5px;
+ }
+
+ .legenda2{
+    visibility: hidden;
+    position: relative;
+    left: 0px;
+    bottom: 5px;
+ }
+
+ h3{
+    margin: 0px;
+    color: white;
+    text-decoration: underline;
+ }
+
+ .membros:hover .legenda1{
+    visibility: visible;
+ }
+
+ .membros:hover .legenda2{
+    visibility: visible;
+ }
+
+ .membros:hover{
+    background: linear-gradient(180deg, rgba(0,0,0,0)9.74%, #152904 100%);
+ }
