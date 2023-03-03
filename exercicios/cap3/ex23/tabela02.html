@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot{
+            background-color: rgb(73, 63, 63);
+            color: white;
+        }
+        
+        thead > tr >th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(73, 63, 63);
+        }
+
+        td.num{
+            text-align: right;
+        }
+        
+        tbody > tr:nth-child(even){
+            background-color: white;
+            color: darkgreen;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
+            color: darkred;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- 
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+     -->
+     <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+            
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.000.000</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.000.000</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.000.000</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.000.000</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.000.000</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.000.000</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">35.000.000</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">15.000.000</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">11.000.000</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">14.000.000</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">5.000.000</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.000.000</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>167.000.000</strong></td>
+            </tr>
+        </tfoot>
+
+     </table>
+    
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, deleniti. Exercitationem, esse inventore a repellendus et quis sunt, fuga laborum ea minus sed, nostrum assumenda non ex? Non, voluptate amet! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus asperiores, mollitia provident quo eveniet ab? Excepturi aut nesciunt ullam repellendus aspernatur natus? Natus laborum iure illum voluptates voluptatum itaque nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, unde dolorum. Quia sequi enim rerum ad odit nulla consequatur magnam velit error officia ratione facilis ab, rem blanditiis ducimus saepe? Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, beatae? Libero voluptatum vitae aliquid. Enim explicabo, fugiat rerum pariatur ipsum nisi, necessitatibus obcaecati minima saepe nobis repellendus quibusdam ea laboriosam!</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, deleniti. Exercitationem, esse inventore a repellendus et quis sunt, fuga laborum ea minus sed, nostrum assumenda non ex? Non, voluptate amet! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus asperiores, mollitia provident quo eveniet ab? Excepturi aut nesciunt ullam repellendus aspernatur natus? Natus laborum iure illum voluptates voluptatum itaque nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, unde dolorum. Quia sequi enim rerum ad odit nulla consequatur magnam velit error officia ratione facilis ab, rem blanditiis ducimus saepe? Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, beatae? Libero voluptatum vitae aliquid. Enim explicabo, fugiat rerum pariatur ipsum nisi, necessitatibus obcaecati minima saepe nobis repellendus quibusdam ea laboriosam!</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, deleniti. Exercitationem, esse inventore a repellendus et quis sunt, fuga laborum ea minus sed, nostrum assumenda non ex? Non, voluptate amet! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus asperiores, mollitia provident quo eveniet ab? Excepturi aut nesciunt ullam repellendus aspernatur natus? Natus laborum iure illum voluptates voluptatum itaque nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, unde dolorum. Quia sequi enim rerum ad odit nulla consequatur magnam velit error officia ratione facilis ab, rem blanditiis ducimus saepe? Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, beatae? Libero voluptatum vitae aliquid. Enim explicabo, fugiat rerum pariatur ipsum nisi, necessitatibus obcaecati minima saepe nobis repellendus quibusdam ea laboriosam!</p>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, deleniti. Exercitationem, esse inventore a repellendus et quis sunt, fuga laborum ea minus sed, nostrum assumenda non ex? Non, voluptate amet! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus asperiores, mollitia provident quo eveniet ab? Excepturi aut nesciunt ullam repellendus aspernatur natus? Natus laborum iure illum voluptates voluptatum itaque nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, unde dolorum. Quia sequi enim rerum ad odit nulla consequatur magnam velit error officia ratione facilis ab, rem blanditiis ducimus saepe? Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, beatae? Libero voluptatum vitae aliquid. Enim explicabo, fugiat rerum pariatur ipsum nisi, necessitatibus obcaecati minima saepe nobis repellendus quibusdam ea laboriosam!</p>
+</body>
+</html>
